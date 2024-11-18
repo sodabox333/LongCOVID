@@ -1,0 +1,160 @@
+/* this is a CSS file*/
+/* i am going to use comments assiduously */
+
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+    }
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    }
+
+
+
+body{ background-color: #ecfefe; 
+    
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; 
+    }
+
+figure{ max-width: 750px; 
+    text-align: center;
+   
+    }
+
+figcaption{
+    font-family: "PT Serif", serif;
+    font-size: 14px;
+    }
+
+img{    max-width:100%; 
+        text-align: center;
+        border: thick solid;
+        border: 3px solid;
+        border-color: lightslategrey;
+        
+        }   /* you need those two rules figcaption and img width together*/
+
+h1{  font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal; 
+    }
+
+
+h2{ text-align: left; 
+    font-family: "Inter", sans-serif;
+    font-weight: 300
+    }
+
+h6{ font-family: "PT Serif", serif;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+   }   /* try negative numbers to take away space or you could put them 
+							in a class together to move em closer together*/
+
+p { text-align: justify;
+    font-family: "PT Serif", serif;
+ }
+
+
+.Headline{  
+    font-weight: bold;
+    color: black;
+    display: block;
+    width: 85%;
+    max-width: 1200px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.byline {padding-top: 5px;
+    margin: -10px;
+    line-height:0px;
+padding-left: 17px;}
+
+.figcaption {
+    font-size: 14px;
+    color: darkslategray;
+    margin-bottom: 50px;
+}  
+
+
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 20px;}
+
+.chart {
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    /* all the rules have to live in here!!!*/
+	
+   
+
+    body{ max-width: 900px;
+            text-align: center;
+            margin-left:auto;
+            margin-right:auto;}
+
+ 
+ 
+
+
+
+
+
+
+/* reminder that all my desktop rules need to go above this comment*/
+
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
